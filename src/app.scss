@@ -1,0 +1,884 @@
+@media screen and (min-width:1500px) {
+  $pblue: #dfecfc;
+  $vblue: #e6e7fb;
+  $rblue: #e9e4f9;
+  $vio: #eae2f8;
+  $violet: #f0dcf5;
+  $sweetrose: #f3d6ef;
+  $rose: #f4d4eb;
+  $rosie: #f6cfe6;
+  $lrose: #f7cde2;
+
+  @keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    100%   { transform: translate(0, -0px); }
+  }
+  body{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #screen {
+    background: linear-gradient($pblue,$vblue,$rblue,$vio, $violet, $sweetrose, $rose, $rosie, $lrose);
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    position: relative;
+    right: 0;
+    left: 0;
+  }
+
+
+  #cloud6 {
+    bottom: calc((100vh - 20%)/2);
+    width: calc((100vw - 72%) / 1.5);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: -5%;
+
+  }
+  #cloud{
+    bottom: 5%;
+    width: calc((100vw - 30%) / 2);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: -5%;
+
+  }
+  #cloud2{
+    bottom: 3%;
+    width: calc((100vw - 20%) / 2);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 45%;
+
+  }
+  #cloud3{
+    bottom: calc((100vh - 30%)/2);
+    width: calc((100vw - 50%) / 1.8);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 70%;
+
+  }
+  #cloud4{
+    bottom: calc((100vh - 50%)/2);
+    width: calc((100vw - 80%) / 2);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30%;
+  }
+  #star{
+    width: 90%;
+  }
+
+
+  #my_logo{
+    width:100%;
+    height:auto;
+    max-width: 50vh;
+  }
+  a {
+    text-decoration: none;
+    outline: none;
+      }
+  #my_button, #my_button2{
+    margin-left: 45%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    font-size: 2ch;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  #my_text1{
+    font-family: 'Sacramento', cursive;
+    color: white;
+    font-size: 8vmax;
+  }
+  #text{
+    font-size: 7ch;
+    font-family: 'Sacramento', sans-serif;
+    color: #A4AFE6;
+    justify-content: center;
+
+  }
+  #texarea{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    //right: 40%;
+    top: 10%;
+  }
+
+  .carousel{
+    height: 20% !important;
+    margin-right: 30%;
+    margin-left: 30%;
+    background: #EFD8DF;
+    margin-bottom: 0%;
+  }
+  #our_reviews{
+    padding-top: 5%;
+    //margin-bottom: 3%;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    color: #D6849E;
+    font-size: 8ch;
+  }
+
+
+  #flower{
+    height: 200px;
+    top: 20%;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+  }
+
+  #flower1{
+    height: 100px;
+    top: 50%;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+  }
+
+  #flowerdiv{
+    width: 20%;
+    top: 30%;
+    padding-left: 5%;
+  }
+  #square{
+    width: 380px;
+    height: 410px;
+    background-color: #EACAD5;
+    position: absolute;
+    margin-left: 30%;
+  }
+
+  #about{
+    width: 350px;
+    margin-left: 68%;
+    margin-top: 5%;
+    border: 15px solid #efefef;
+    object-fit: cover;
+    position: relative;
+  }
+  #aboutme{
+    color: #CE86BD;
+    width: 30vw;
+    margin-left: 80%;
+    margin-top: 5%;
+    font-size: 1.3vw;
+    font-weight: bold;
+    text-align: justify;
+    text-indent: 50px;
+    font-family: 'Lato', sans-serif;
+  }
+  #aboutmee{
+    color: #CE86BD;
+    margin-top: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Quicksand', serif;
+    text-align: center;
+
+  }
+  #moon{
+    height: 100px;
+    margin-right: 45%;
+    margin-bottom: 5%;
+  }
+}
+
+/*TABLET*/
+
+@media screen and (max-width: 1500px){
+  $pblue: #dfecfc;
+  $vblue: #e6e7fb;
+  $rblue: #e9e4f9;
+  $vio: #eae2f8;
+  $violet: #f0dcf5;
+  $sweetrose: #f3d6ef;
+  $rose: #f4d4eb;
+  $rosie: #f6cfe6;
+  $lrose: #f7cde2;
+
+  @keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    100%   { transform: translate(0, -0px); }
+  }
+  body{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #screen {
+    background: linear-gradient($pblue,$vblue,$rblue,$vio, $violet, $sweetrose, $rose, $rosie, $lrose);
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    position: relative;
+    right: 0;
+    left: 0;
+  }
+
+  #cloud6 {
+    bottom: calc((100vh - 30%)/2);
+    width: calc((100vw - 72%) / 1.5);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 2%;
+
+  }
+  #cloud{
+    bottom: 5%;
+    width: calc((100vw - 30%) / 1.5);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: -5%;
+
+  }
+  #cloud2{
+    bottom: 3%;
+    width: calc((100vw - 8%) / 2);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 45%;
+
+  }
+  #cloud3{
+    bottom: calc((100vh - 30%)/2);
+    width: calc((100vw - 50%) / 1.8);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 70%;
+
+  }
+  #cloud4{
+    bottom: calc((100vh - 50%)/2);
+    width: calc((100vw - 80%) / 2);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30%;
+  }
+  #star{
+    width: 90%;
+  }
+
+  #text{
+    font-size: 7ch;
+    font-family: 'Sacramento', sans-serif;
+    color: #A4AFE6;
+    justify-content: center;
+
+  }
+  #texarea{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    //right: 40%;
+    top: 10%;
+  }
+  .carousel{
+    height: 40% !important;
+    margin-right: 30%;
+    margin-left: 30%;
+    background: #EFD8DF;
+  }
+
+  #our_reviews{
+    padding-top: 7%;
+    margin-bottom: 3%;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    color: #D6849E;
+    font-size: 7ch;
+  }
+
+
+  #flower{
+    height: 200px;
+    top: 30%;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+  }
+
+  #flower1{
+    height: 100px;
+    top: 80%;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+  }
+
+  #flowerdiv{
+    width: 20%;
+    top: 30%;
+    padding-left: 1%;
+  }
+  #square{
+    width: 300px;
+    height: 350px;
+    background-color: #EACAD5;
+    position: absolute;
+    margin-left: 30%;
+  }
+
+  #about{
+    width: 300px;
+    margin-left: 55%;
+    margin-top: 5%;
+    border: 15px solid #efefef;
+    object-fit: cover;
+    position: relative;
+  }
+  #aboutme{
+    color: #CE86BD;
+    width: 30vw;
+    //margin-left: 88%;
+    margin-top: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+  }
+
+  #aboutmee{
+    color: #CE86BD;
+    margin-top: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Quicksand', serif;
+    text-align: center;
+  }
+  #moon{
+    height: 80px;
+    margin-right: 40%;
+    margin-top: 10%;
+
+  }
+
+
+}
+/*TABL2*/
+
+@media screen and (max-width: 900px){
+  $pblue: #dfecfc;
+  $vblue: #e6e7fb;
+  $rblue: #e9e4f9;
+  $vio: #eae2f8;
+  $violet: #f0dcf5;
+  $sweetrose: #f3d6ef;
+  $rose: #f4d4eb;
+  $rosie: #f6cfe6;
+  $lrose: #f7cde2;
+
+  @keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    100%   { transform: translate(0, -0px); }
+  }
+  body{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  #screen {
+    background: linear-gradient($pblue,$vblue,$rblue,$vio, $violet, $sweetrose, $rose, $rosie, $lrose);
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    position: relative;
+    right: 0;
+    left: 0;
+  }
+  #star{
+    height: 600px;
+  }
+
+  #moon{
+    height: 80px;
+    margin-right: 40%;
+    margin-top: 10%;
+
+  }
+  #cloud6 {
+    bottom: calc((100vh - 40%)/2);
+    width: calc((100vw - 72%) / 1.5);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 2%;
+
+  }
+  #cloud{
+    bottom: 5%;
+    width: calc((100vw - 30%) / 1.5);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: -5%;
+
+  }
+  #cloud2{
+    bottom: 5%;
+    width: calc((100vw - 8%) / 1.6);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 40%;
+
+  }
+  #cloud3{
+    bottom: calc((100vh - 30%)/2);
+    width: calc((100vw - 30%) / 1.8);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 52%;
+
+  }
+  #cloud4{
+    bottom: calc((100vh - 50%)/2);
+    width: calc((100vw - 70%) / 1.9);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 20%;
+  }
+  #star{
+    width: 100%;
+  }
+
+
+  #text{
+    font-size: 6ch;
+    font-family: 'Sacramento', sans-serif;
+    color: #A4AFE6;
+    justify-content: center;
+
+  }
+  #texarea{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    //right: 40%;
+    top: 10%;
+  }
+
+  .carousel{
+    height: 40% !important;
+    margin-right: 30%;
+    margin-left: 30%;
+    background: #EFD8DF;
+  }
+
+  #our_reviews{
+    padding-top: 15%;
+    margin-bottom: 3%;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    color: #D6849E;
+    font-size: 7ch;
+  }
+  #flower{
+    height: 100px;
+    top: 30%;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+  }
+
+  #flower1{
+    height: 80px;
+    top: 50%;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: absolute;
+  }
+
+  #flowerdiv{
+    width: 20%;
+    top: 30%;
+    padding-right: 10%;
+  }
+  #square{
+    width: 330px;
+    height: 350px;
+    background-color: #EACAD5;
+    position: absolute;
+    margin-left: 30%;
+  }
+
+  #about{
+    width: 280px;
+    margin-left: 55%;
+    margin-top: 10%;
+    border: 15px solid #efefef;
+    object-fit: cover;
+    position: relative;
+  }
+  //#aboutme{
+  //  color: #CE86BD;
+  //  width: 30vw;
+  //  margin-left: 30%;
+  //  margin-top: 15%;
+  //  font-size: 1.8vw;
+  //  font-weight: bold;
+  //  text-align: justify;
+  //  text-indent: 50px;
+  //  font-family: 'Lato', sans-serif;
+  //}
+  #aboutmee{
+    color: #CE86BD;
+    margin-top: 15%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Quicksand', serif;
+    text-align: center;
+  }
+
+  #flower{
+    display: none;
+  }
+  #flower1{
+    display: none;
+  }
+
+  #flowerdiv{
+    display: none;
+  }
+  #flowerdiv1{
+    display: none;
+  }
+
+}
+
+
+
+@media screen and (max-width:600px){
+
+  $pblue: #dfecfc;
+  $vblue: #e6e7fb;
+  $rblue: #e9e4f9;
+  $vio: #eae2f8;
+  $violet: #f0dcf5;
+  $sweetrose: #f3d6ef;
+  $rose: #f4d4eb;
+  $rosie: #f6cfe6;
+  $lrose: #f7cde2;
+
+  @keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    100%   { transform: translate(0, -0px); }
+  }
+
+  #screen {
+    background: linear-gradient($pblue,$vblue,$rblue,$vio, $violet, $sweetrose, $rose, $rosie, $lrose);
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    position: relative;
+    right: 0;
+    left: 0;
+
+  }
+
+  body{
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+
+  #cartbutton{
+    margin-right: 3%;
+  }
+  #star{
+    height: 600px;
+  }
+  #moon{
+    height: 80px;
+    margin-right: 40%;
+    margin-top: 10%;
+  }
+  #cloud6 {
+    bottom: calc((100vh - 55%) /2);
+    width: calc((100vw - 45%) / 1.5);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: -10%;
+    transform: scaleY(1.5);
+
+  }
+  #cloud{
+    bottom: 7%;
+    width: calc((100vw - 3%) / 1.9);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: -7%;
+
+  }
+  #cloud2{
+    bottom: 3%;
+    width: calc((100vw - 3%) / 1.5);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 33%;
+
+  }
+  #cloud3{
+    bottom: calc((100vh - 55%) /2);
+    width: calc((100vw - 28%) / 1.8);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 58%;
+
+  }
+  #cloud4{
+    bottom: calc((100vh - 60%) /2);
+    width: calc((100vw - 75%) / 1.9);
+    position: absolute;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 20%;
+  }
+
+
+  #star{
+    height: 350px;
+    }
+
+  #my_logo{
+    width:100%;
+    height:auto;
+    max-width: 50vh;
+  }
+  #text{
+    font-size: 4ch;
+    font-family: 'Sacramento', sans-serif;
+    color: #A4AFE6;
+    justify-content: center;
+
+  }
+
+  #texarea{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 10%;
+  }
+
+  a {
+    text-decoration: none;
+    outline: none;
+  }
+  #my_button, #my_button2{
+    margin-left: 30%;
+    background-color: #f0dcf5;
+    color: hotpink;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    font-size: 1ch;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  #my_text1{
+    font-family: 'Sacramento', cursive;
+    color: white;
+    font-size: 8vmax;
+  }
+  .carousel{
+    height: 40% !important;
+    margin-right: 1%;
+    margin-left: 1%;
+    background-color: #EFD8DF;
+  }
+
+  #our_reviews{
+    padding-top: 15%;
+    margin-bottom: 3%;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    color: #D6849E;
+    font-size: 5ch;
+
+  }
+
+  #square{
+    width: 330px;
+    height: 350px;
+    background-color: #EACAD5;
+    position: absolute;
+    margin-left: 8%;
+    margin-top: 15%;
+
+  }
+  #about{
+    width: 280px;
+    margin-left: 10%;
+    margin-top: 17%;
+    border: 15px solid #efefef;
+    object-fit: cover;
+    position: relative;
+  }
+
+
+
+  //#aboutme{
+  //  color: #CE86BD;
+  //  margin-top: 28%;
+  //  font-size: 20px;
+  //  font-weight: bold;
+  //  font-family: 'Lato', sans-serif;
+  //}
+
+
+  #aboutmee{
+    font-family: 'Quicksand', serif;
+    color: #CE86BD;
+    margin-top: 28%;
+
+    font-size: 20px;
+  }
+
+  #flower{
+    display: none;
+  }
+  #flower1{
+    display: none;
+  }
+
+  #flowerdiv{
+    display: none;
+  }
+  #flowerdiv1{
+      display: none;
+  }
+
+
+}
+
+.nav_links{
+  color: #ffffff;
+  font-weight: bolder;
+  font-size: 4ch;
+  font-family: 'Sacramento', cursive;
+  text-decoration: none;
+}
+
+.nav_links:hover{
+  color: #D6849E;
+
+}
+.closebutton{
+  color: #D6849E;
+  left: 85%;
+}
+
+
+.center-block{
+margin: 0 auto}
+
+
+.category_name{
+  margin-top: 2%;
+  font-family: 'Sacramento', cursive;
+  color: #D6849E;
+  font-size: 8ch;
+}
+
+#loading{
+  font-family: 'Lato', sans-serif;
+  color: #6A46AF;
+  font-size: 5ch;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.7);
+  }
+
+  70% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.7);
+
+  }
+}
+
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("fonts/Quicksand.ttf");
+
+}
