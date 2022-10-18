@@ -14,7 +14,6 @@ const AddressForm = ({checkoutToken, next}) => {
     const [shippingSubdivision, setShippingSubdivision] = useState('');
     const [shippingOptions, setShippingOptions] = useState([]);
     const [shippingOption, setShippingOption] = useState({id: ''});
-    const [shippingCost, setShippingcost] = useState(0);
 
     const methods = useForm();
 
@@ -30,7 +29,6 @@ const AddressForm = ({checkoutToken, next}) => {
     }
     const fetchSubdivisions = async (countryCode) => {
         const { subdivisions } = await commerce.services.localeListSubdivisions(countryCode);
-
         setShippingSubdivisions(subdivisions);
         setShippingSubdivision(Object.keys(subdivisions)[0]);
     };
@@ -38,10 +36,6 @@ const AddressForm = ({checkoutToken, next}) => {
     const fetchShippingOptions = async (checkoutTokenId, country, stateProvince = null) => {
         const options = await commerce.checkout.getShippingOptions(checkoutTokenId, { country, region: stateProvince });
         setShippingOptions(options);
-        // setShippingOption(options[0].id);
-        // const cost = options[0].price.raw
-        // setShippingcost(cost)
-
     };
 
 
@@ -106,8 +100,6 @@ const AddressForm = ({checkoutToken, next}) => {
                                 {options.map((option) => (
                                     <MenuItem key={option.id} value={option.id}>
                                         {option.label}
-                                        {console.log(option)}
-
                                     </MenuItem>
 
                                 ))}
