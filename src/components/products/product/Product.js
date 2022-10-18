@@ -49,8 +49,6 @@ const Product = ({cart, product, onAddToCart}) => {
             </CardActions>
             }
 
-            {console.log("Rebuild product component")}
-
 
 
             <Link to={`product-view/${product.id}`} className={classes.link}>
