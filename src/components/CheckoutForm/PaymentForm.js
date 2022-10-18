@@ -13,8 +13,7 @@ const PaymentForm = ({checkoutToken,shippingData, nextStep, backStep,  onCapture
         event.preventDefault();
         if(!stripe || !elements) return;
 
-        console.log(shippingData)
-
+        
         const cardElement =elements.getElement(CardElement);
 
 
@@ -37,7 +36,7 @@ const PaymentForm = ({checkoutToken,shippingData, nextStep, backStep,  onCapture
                     shipping_method: shippingData.shippingOption.id,
                 },
                 payment: {
-                    gateway: 'gway_4oG3G0DGPyvPo6',
+                    gateway: 'gateway_number',
                     stripe: {
                         payment_method_id: paymentMethod.id
 
@@ -53,7 +52,7 @@ const PaymentForm = ({checkoutToken,shippingData, nextStep, backStep,  onCapture
     }
 
     const total = checkoutToken.subtotal.raw
-    console.log(shippingData)
+   
 
     return(
         <React.Fragment>
