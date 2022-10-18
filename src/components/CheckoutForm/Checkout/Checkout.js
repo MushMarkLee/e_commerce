@@ -26,8 +26,6 @@ const Checkout = ({cart, order, onCaptureCheckout, error }) => {
                 try {
                     const token = await commerce.checkout.generateToken(cart.id, { type: 'cart' });
                     setCheckoutToken(token);
-                    console.log(token)
-
                 } catch {
 
                 }
@@ -80,12 +78,10 @@ const Checkout = ({cart, order, onCaptureCheckout, error }) => {
 
     const next = (data) => {
         setShippingData(data)
-        console.log(data)
         commerce.checkout.checkShippingOption(checkoutToken.id, {
             shipping_option_id: data.shippingOption.id,
             country: data.shippingCountry,
         }).then((response) => {
-            console.log(response)
             setCheckoutToken(response)
             nextStep()
         });
