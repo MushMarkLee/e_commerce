@@ -7,10 +7,6 @@ import {commerce} from "../../lib/commerce";
 
 const Cart = ({ products, cart, handleUpdateCartQty, handleRemoveFromCart, handleEmptyCart}) => {
     const classes = useStyles()
-
-
-
-
     const renderEmptyCart = () => (
         <div className={classes.emptyCart}>
             <Typography variant="subtitle1" style={{fontFamily: 'Lato', fontSize: '20px'}}> You have no items in your shopping cart
@@ -19,8 +15,6 @@ const Cart = ({ products, cart, handleUpdateCartQty, handleRemoveFromCart, handl
         </div>
 
     );
-
-
 
     const renderFilledCart = () => (
 
