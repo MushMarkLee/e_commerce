@@ -18,12 +18,10 @@ const Review = ({checkoutToken}) => {
                     <ListItemText primary="Total" />
                     <Typography variant="subtitle1" style={{ fontWeight: 700 }}>
                         {checkoutToken.total.formatted_with_symbol}
-                        {console.log(checkoutToken)}
                     </Typography>
                 </ListItem>
             </List>
         </React.Fragment>
-
 
     )
 }
