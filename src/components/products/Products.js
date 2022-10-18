@@ -21,11 +21,6 @@ const Products = ({cart, categories, onAddToCart}) => {
                     <Container >
                         <Typography>
                            <p className='category_name'> {category.name}</p>
-                            {/*<img src={category.assets[0].url} style={{width: '200px'}}/>*/}
-                            {/*<Link to={`/` + category.name} >*/}
-                            {/*    <button > click </button>*/}
-
-                            {/*</Link>*/}
 
                         </Typography>
                         <Grid container justify='center' spacing={4}>
@@ -41,18 +36,6 @@ const Products = ({cart, categories, onAddToCart}) => {
             })}
         </main>
 
-
-        // <main className={classes.content} id='content_products'>
-        //     <div className={classes.toolbar} />
-        //     <Grid container justify='center' spacing={4}>
-        //         {products.map((product)=> (
-        //             <Grid item key={product.id} xs={12} sm={6} md={4} lg={4}>
-        //                 <Product product={product} onAddToCart={onAddToCart} />
-        //             </Grid>
-        //         ))}
-        //     </Grid>
-        //
-        // </main>
         )
 
 }
